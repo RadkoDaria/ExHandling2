@@ -20,6 +20,7 @@ namespace StringParser
                 if (isNegative)
                 {
                     str = str.Substring(1);
+                    isNegative = true;
                 }
                 int result = 0;
                 int power = str.Length - 1;
@@ -31,7 +32,7 @@ namespace StringParser
                         checked
                         {
                             {
-                                for (var j = 0; j <= power; j++)
+
                                 {
                                     result += (c - 48) * (int)Math.Pow(10, power);
                                     power--;
